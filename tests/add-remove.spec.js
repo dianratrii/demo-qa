@@ -24,7 +24,7 @@ test('add and remove elements', async ({ }) => {
     // Define the selector for the button to delete elements
     const deleteButton = page.getByRole('button', { name: 'Delete' });
 
-    // Click the add button to delete the elements (it repeats about 3 times)
+    // Click the delete button to delete the elements (it repeats about 3 times)
     for (let i = 0; i < 3; i++) {
         await deleteButton.nth(0).click();
     }
